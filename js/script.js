@@ -2,6 +2,7 @@ const navBtn = document.getElementById("nav-btn");
 const cancelBtn = document.getElementById("cancel-btn");
 const sideNav = document.getElementById("sidenav");
 const modal = document.getElementById("modal");
+// const in
 
 navBtn.addEventListener("click", function(){
     sideNav.classList.add('show');
