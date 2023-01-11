@@ -1,3 +1,8 @@
+function isLoggedIn(){
+    if(!localStorage.getItem("skylineUserData")) window.location.replace('./login.html');
+}
+isLoggedIn();
+
 const navBtn = document.getElementById("nav-btn");
 const cancelBtn = document.getElementById("cancel-btn");
 const sideNav = document.getElementById("sidenav");

@@ -1,4 +1,5 @@
-const API_SERVER_URL = 'http://192.168.43.240:4000';
+// const API_SERVER_URL = 'http://192.168.43.240:4000';
+const API_SERVER_URL = 'https://skyline-hotels-backend.up.railway.app';
 const loginForm = document.querySelector("#login-form");
 
 async function handleSubmit(event){
@@ -22,7 +23,10 @@ async function handleSubmit(event){
         );
         res = await res.json();
         alert(res.message);
-        if(res.success) window.location.replace(".");
+        if(res.success) {
+            window.location.replace(".");
+            localStorage.setItem("skylineUserData", JSON.stringify(res.user));
+        }
     }catch(error){
         // console.log(error);
         alert('something went wrong');
