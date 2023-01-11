@@ -6,49 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-</head>
-<body>  
-  <!-- HTML for the sign up form -->
-  <div class="site-name">
-    <span>SKYLINE HOTELS</span>
-</div>
-
-  <form id="signup-form">
-    <h1>Sign Up</h1>
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br>
+  </head>
+  <body>  
+    <!-- HTML for the sign up form -->
+    <div class="site-name">
+      <span>SKYLINE HOTELS</span>
+    </div>
+    
+    <form id="signup-form">
+      <h1>Sign Up</h1>
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value="harrisonderick.65@gmail.com"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value="harrisonderick.65@gmail.com"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value="harrisonderick.65@gmail.com"><br>
     <label for="password-confirm">Confirm Password:</label><br>
-    <input type="password" id="password-confirm" name="password-confirm"><br><br>
+    <input type="password" id="password-confirm" name="password-confirm" value="harrisonderick.65@gmail.com"><br><br>
     <p><span><input type="checkbox"></span> I agree to the terms of services</p>
     <button type="submit">Sign Up</button>
     <p>Do you have an account?<a href="login.html"> Login</a></p>
-
+    
   </form> 
   
   <!-- CSS for styling the forms -->
   <style>
     body{
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url("../images/hotel-room-5858067_1920.jpg") center/cover no-repeat;
-        font-family: 'Playfair Display', serif;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url("../images/hotel-room-5858067_1920.jpg") center/cover no-repeat;
+      font-family: 'Playfair Display', serif;
     }
     .site-name{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-        color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      color: #fff;
     }
     .site-name span{
-        cursor: pointer;
-        letter-spacing: 2px;
-        transition: all 0.7s ease;
+      cursor: pointer;
+      letter-spacing: 2px;
+      transition: all 0.7s ease;
     }
     .site-name span:hover{
-        color: #f9d342;
+      color: #f9d342;
     }
 
     form {
@@ -59,7 +59,7 @@
       padding: 20px;
     }
     h1{
-        color: #fff;
+      color: #fff;
     }
     @media (max-width: 600px) {
       form {
@@ -91,11 +91,13 @@
       cursor: pointer;
     }
     p{
-        color: #fff;
+      color: #fff;
     }
     p a{
-        color: #f9d342;
+      color: #f9d342;
     }
-  </style>
+    </style>
+    <p class="result"></p>
 </body>
+<script src="./js/signup.js" type="text/javascript"></script>
 </html>
