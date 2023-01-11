@@ -342,10 +342,21 @@ img{
 .room-image:hover img{
     transform: scale(1.1);
 }
-/* #carousel{
+#carousel{
     display: flex;
     overflow-x: scroll;
-} */
+}
+.swiper-button-next {
+    --swiper-navigation-color:white;
+  }
+  
+  .swiper-button-prev {
+    --swiper-navigation-color:white;
+  }
+#carousel::-webkit-scrollbar{
+    display: none;
+}
+
 @media (max-width: 800px) {
     .room {
       flex: 0 0 100%;

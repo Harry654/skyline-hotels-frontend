@@ -8,37 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    <style>
-        .carousel {
-        overflow: hidden;
-        white-space: nowrap;
-        }
+    
 
-        .carousel-item {
-        display: inline-block;
-        }
+    
 
-        .carousel-item img {
-        width: 100%;
-        }
 
-        /* Add animation */
-        .carousel-item {
-        animation: carousel 15s infinite;
-        }
-
-        @keyframes carousel {
-        0% { transform: translateX(0); }
-        20% { transform: translateX(0); }
-        25% { transform: translateX(-100%); }
-        45% { transform: translateX(-100%); }
-        50% { transform: translateX(-200%); }
-        70% { transform: translateX(-200%); }
-        75% { transform: translateX(-300%); }
-        100% { transform: translateX(-300%); }
-        }
-
-    </style>
 </head>
 <body>
     <!-- header -->
@@ -182,10 +156,11 @@
         <div class="title">
             <h2>rooms</h2>
         </div>
-        <div class="rooms-container" class="carousel">
+        <div class="swiper">
+        <div class="swiper-wrapper">
 
             <!-- single room -->
-            <article class="room carousel-item">
+            <article class="room swiper-slide">
                 <div class="room-image">
                     <img src="./images/hotel-1979406_1920.jpg" alt="room image">
                 </div>
@@ -215,7 +190,7 @@
             <!-- end of single room -->
 
             <!-- single room -->
-            <article class="room carousel-item">
+            <article class="room swiper-slide">
                 <div class="room-image">
                     <img src="./images/apartment-1822409_1920.jpg" alt="room image">
                 </div>
@@ -244,7 +219,7 @@
             </article>
             <!-- end of single room -->
             <!-- single room -->
-            <article class="room carousel-item">
+            <article class="room swiper-slide">
                 <div class="room-image">
                     <img src="./images/apartment-1822409_1920.jpg" alt="room image">
                 </div>
@@ -274,7 +249,7 @@
             <!-- end of single room -->
 
             <!-- single room -->
-            <article class="room carousel-item">
+            <article class="room swiper-slide">
                 <div class="room-image">
                     <img src="./images/hotel-room-1447201_1920.jpg" alt="room image">
                 </div>
@@ -302,6 +277,14 @@
                 </div>
             </article>
             <!-- end of single room -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- <div class="swiper-scrollbar"></div> -->
+
         </div>
     </section>
 
@@ -424,5 +407,37 @@
 
     <script src="./js/all.min.js"></script>
     <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      
+        const swiper = new Swiper('.swiper', {
+            // direction: 'horizontal',
+            loop: true,
+            startSlide: 0,
+            speed: 400,
+            auto: 3000,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+
+
+
+    </script>
 </body>
 </html>
