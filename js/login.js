@@ -1,3 +1,6 @@
+if(localStorage.getItem("skylineUserData")){
+    localStorage.removeItem("skylineUserData");
+}
 // const API_SERVER_URL = 'http://192.168.43.240:4000';
 const API_SERVER_URL = 'https://skyline-hotels-backend.up.railway.app';
 const loginForm = document.querySelector("#login-form");
