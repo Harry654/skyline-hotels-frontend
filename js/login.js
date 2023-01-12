@@ -25,7 +25,7 @@ async function handleSubmit(event){
         alert(res.message);
         if(res.success) {
             window.location.replace(".");
-            localStorage.setItem("skylineUserData", JSON.stringify(res.user));
+            sessionStorage.setItem("skylineUserData", JSON.stringify(res.user));
         }
     }catch(error){
         // console.log(error);

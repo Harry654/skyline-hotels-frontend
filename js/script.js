@@ -1,5 +1,5 @@
 function isLoggedIn(){
-    if(!localStorage.getItem("skylineUserData")) window.location.replace('./login.html');
+    if(!sessionStorage.getItem("skylineUserData")) window.location.replace('./login.html');
 }
 isLoggedIn();
 
